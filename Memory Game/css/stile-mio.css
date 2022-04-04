@@ -1,0 +1,799 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+.block {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    text-align: center;
+    margin: auto;
+    padding: 40px 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    margin: 0 0 10px;
+}
+
+.schermata {
+    text-align: center;
+    background-image: url(../img/back1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.starter,
+.starter2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.welcome {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 9px 7px white;
+    color: black;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.compari {
+    display: static;
+}
+
+.scompari {
+    display: none;
+}
+
+.starter button,
+.starter2 button {
+    font-size: 1.3em;
+}
+
+.block {
+    display: inline-block;
+    font-size: 0.01em;
+    padding: 0;
+    margin: 5px 5px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 8px 4px black;
+}
+
+.punti {
+    font-size: 1.2em;
+    color: white;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    background-color: rgb(247, 66, 66);
+    border-radius: 7px;
+    padding: 0.7em;
+    box-shadow: 0px 0px 8px 4px black;
+    z-index: 2;
+}
+
+.foto0,
+.foto12 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open0,
+.foto-open12 {
+    background-image: url('../img/0.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto1,
+.foto13 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open1,
+.foto-open13 {
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto2,
+.foto14 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open2,
+.foto-open14 {
+    background-image: url('../img/2.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto3,
+.foto15 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open3,
+.foto-open15 {
+    background-image: url('../img/3.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto4,
+.foto16 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open4,
+.foto-open16 {
+    background-image: url('../img/4.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto5,
+.foto17 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open5,
+.foto-open17 {
+    background-image: url('../img/5.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto6,
+.foto18 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open6,
+.foto-open18 {
+    background-image: url('../img/6.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto7,
+.foto19 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open7,
+.foto-open19 {
+    background-image: url('../img/7.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto8,
+.foto20 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open8,
+.foto-open20 {
+    background-image: url('../img/8.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto9,
+.foto21 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open9,
+.foto-open21 {
+    background-image: url('../img/9.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto10,
+.foto22 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open10,
+.foto-open22 {
+    background-image: url('../img/10.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto11,
+.foto23 {
+    background-image: url('../img/card\ back\ red.png');
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+.foto-open11,
+.foto-open23 {
+    background-image: url('../img/11.jpg');
+    background-size: cover;
+    width: 130px;
+    height: 130px;
+}
+
+
+/* ANIM */
+
+@keyframes rotazione-carta {
+    from {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+@keyframes rotazione-carta-back {
+    from {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, -180deg);
+    }
+}
+
+@keyframes errato {
+    from {
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transform: rotateZ(10deg);
+    }
+    60% {
+        transform: rotateZ(-10deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes esatto {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes vitt {
+    from {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+.animazione {
+    animation-name: rotazione-carta;
+    animation-duration: 0.3s;
+}
+
+.animazione-back {
+    animation-name: rotazione-carta-back;
+    animation-duration: 0.5s;
+}
+
+.anim-errato {
+    animation-name: errato;
+    animation-duration: 0.5s;
+}
+
+.anim-esatto {
+    animation-name: esatto;
+    animation-duration: 0.5s;
+}
+
+.anim-vittoria {
+    animation-name: vitt;
+    animation-duration: 1s;
+}
+
+
+/* Media */
+
+@media screen and (max-width: 1200px) {
+    .foto0,
+    .foto12 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open0,
+    .foto-open12 {
+        background-image: url('../img/0.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto1,
+    .foto13 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open1,
+    .foto-open13 {
+        background-image: url('../img/1.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto2,
+    .foto14 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open2,
+    .foto-open14 {
+        background-image: url('../img/2.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto3,
+    .foto15 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open3,
+    .foto-open15 {
+        background-image: url('../img/3.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto4,
+    .foto16 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open4,
+    .foto-open16 {
+        background-image: url('../img/4.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto5,
+    .foto17 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open5,
+    .foto-open17 {
+        background-image: url('../img/5.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto6,
+    .foto18 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open6,
+    .foto-open18 {
+        background-image: url('../img/6.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto7,
+    .foto19 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open7,
+    .foto-open19 {
+        background-image: url('../img/7.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto8,
+    .foto20 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open8,
+    .foto-open20 {
+        background-image: url('../img/8.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto9,
+    .foto21 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open9,
+    .foto-open21 {
+        background-image: url('../img/9.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto10,
+    .foto22 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open10,
+    .foto-open22 {
+        background-image: url('../img/10.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto11,
+    .foto23 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .foto-open11,
+    .foto-open23 {
+        background-image: url('../img/11.jpg');
+        background-size: cover;
+        width: 70px;
+        height: 70px;
+    }
+    .punti {
+        font-size: 0.8em;
+        color: white;
+        position: fixed;
+        right: 30px;
+        top: 80px;
+        background-color: rgb(247, 66, 66);
+        border-radius: 7px;
+        padding: 0.7em;
+        box-shadow: 0px 0px 8px 4px black;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .foto0,
+    .foto12 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open0,
+    .foto-open12 {
+        background-image: url('../img/0.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto1,
+    .foto13 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open1,
+    .foto-open13 {
+        background-image: url('../img/1.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto2,
+    .foto14 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open2,
+    .foto-open14 {
+        background-image: url('../img/2.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto3,
+    .foto15 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open3,
+    .foto-open15 {
+        background-image: url('../img/3.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto4,
+    .foto16 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open4,
+    .foto-open16 {
+        background-image: url('../img/4.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto5,
+    .foto17 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open5,
+    .foto-open17 {
+        background-image: url('../img/5.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto6,
+    .foto18 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open6,
+    .foto-open18 {
+        background-image: url('../img/6.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto7,
+    .foto19 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open7,
+    .foto-open19 {
+        background-image: url('../img/7.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto8,
+    .foto20 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open8,
+    .foto-open20 {
+        background-image: url('../img/8.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto9,
+    .foto21 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open9,
+    .foto-open21 {
+        background-image: url('../img/9.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto10,
+    .foto22 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open10,
+    .foto-open22 {
+        background-image: url('../img/10.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto11,
+    .foto23 {
+        background-image: url('../img/card\ back\ red.png');
+        background-position: center;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .foto-open11,
+    .foto-open23 {
+        background-image: url('../img/11.jpg');
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+    .punti {
+        font-size: 0.65em;
+        color: white;
+        position: fixed;
+        right: 30px;
+        top: 90px;
+        background-color: rgb(247, 66, 66);
+        border-radius: 7px;
+        padding: 0.7em;
+        box-shadow: 0px 0px 8px 4px black;
+        z-index: 2;
+    }
+}

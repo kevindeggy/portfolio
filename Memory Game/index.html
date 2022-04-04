@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game by Kevin</title>
+
+    <link rel="stylesheet" href="css/stile-mio.css">
+</head>
+
+<body>
+    <div class="starter">
+        <h1>Memory Game</h1>
+        <button>GAME START</button>
+        <button id="btn-reset"><a href="javascript:location.reload(true)">RESTART</a></button>
+    </div>
+
+    <div class="schermata">
+        <div id="carta0" onclick="apri(0)" class="block"></div>
+        <div id="carta1" onclick="apri(1)" class="block"></div>
+        <div id="carta2" onclick="apri(2)" class="block"></div>
+        <div id="carta3" onclick="apri(3)" class="block"></div>
+        <div id="carta4" onclick="apri(4)" class="block"></div>
+        <div id="carta5" onclick="apri(5)" class="block"></div>
+
+        <br>
+
+        <div id="carta6" onclick="apri(6)" class="block"></div>
+        <div id="carta7" onclick="apri(7)" class="block"></div>
+        <div id="carta8" onclick="apri(8)" class="block"></div>
+        <div id="carta9" onclick="apri(9)" class="block"></div>
+        <div id="carta10" onclick="apri(10)" class="block"></div>
+        <div id="carta11" onclick="apri(11)" class="block"></div>
+
+        <br>
+
+        <div id="carta12" onclick="apri(12)" class="block"></div>
+        <div id="carta13" onclick="apri(13)" class="block"></div>
+        <div id="carta14" onclick="apri(14)" class="block"></div>
+        <div id="carta15" onclick="apri(15)" class="block"></div>
+        <div id="carta16" onclick="apri(16)" class="block"></div>
+        <div id="carta17" onclick="apri(17)" class="block"></div>
+
+        <br>
+
+        <div id="carta18" onclick="apri(18)" class="block"></div>
+        <div id="carta19" onclick="apri(19)" class="block"></div>
+        <div id="carta20" onclick="apri(20)" class="block"></div>
+        <div id="carta21" onclick="apri(21)" class="block"></div>
+        <div id="carta22" onclick="apri(22)" class="block"></div>
+        <div id="carta23" onclick="apri(23)" class="block"></div>
+    </div>
+
+    <div class="starter2">
+        <div class="orario">
+            <span id="ore"></span>
+            <span id="minuti"></span>
+            <span id="secondi"></span>
+        </div>
+    </div>
+
+    <div class="punti">
+        <h3></h3>
+    </div>
+
+    <div class="welcome">
+        <h2>Benvenuto nel MEMORY GAME di</h2>
+        <h3>Kevin De Girolamo</h3>
+
+        <h3>Clicca su "GAME START" per iniziare!</h3>
+        <h3>Buona Fortuna!</h3>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><a href="javascript:location.reload(true)">&times;</a></span>
+            <p></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
