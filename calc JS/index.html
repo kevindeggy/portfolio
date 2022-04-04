@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice K</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="cont">
+        <div class="conteiner">
+            <h1>LA MIA CALCOLATRICE IN JS</h1>
+
+            <div class="result" class="">
+
+                <div class="calc">
+                    <input type="text" id="testo" maxlength="10" placeholder="0">
+                    <div class="row">
+                        <button onclick="canc()">C</button>
+                        <button onclick="del()">del</button>
+                        <button onclick="sqrt()">√</button>
+                        <button id="divisione" onclick="adddivis()">/</button>
+                        <button id="potenzaq" onclick="potq()">x^2</button>
+                    </div>
+                    <div class="row ">
+                        <button onclick="add7()">7</button>
+                        <button onclick="add8()">8</button>
+                        <button onclick="add9()">9</button>
+                        <button id="moltiplicazione" onclick="addmolt()">X</button>
+                        <button id="logaritmo" onclick="log()">log</button>
+                    </div>
+                    <div class="row ">
+                        <button onclick="add4()">4</button>
+                        <button onclick="add5()">5</button>
+                        <button onclick="add6()">6</button>
+                        <button id="sottrazione" onclick="addsott()">-</button>
+                        <button id="pgreco" onclick="pgreco()">π</button>
+                    </div>
+                    <div class="row ">
+                        <button onclick="add1()">1</button>
+                        <button onclick="add2()">2</button>
+                        <button onclick="add3()">3</button>
+                        <button id="addizione" onclick="addplus()">+</button>
+                        <button id="eulero" onclick="eulero()">e</button>
+                    </div>
+                    <div class="row ">
+                        <button id="piumeno" onclick="piumeno()">+/-</button>
+                        <button onclick="add0()">0</button>
+                        <button id="virgola" onclick="addp()">,</button>
+                        <button class="btn-d" onclick="uguale()">=</button>
+                    </div>
+
+                </div>
+                <div class="block">
+                    <div class="task">
+                        <div class="title">
+                            <h2>Operazione in corso:</h2>
+                        </div>
+                        <div id="ope-cor"></div>
+                    </div>
+                    <div class="task">
+                        <div class="title">
+                            <h2>Ultima operazione effettuata:</h2>
+                        </div>
+                        <div id="ult-ope"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>di Kevin De Girolamo</p>
+    </div>
+
+    <script src="assets/js/script.js "></script>
+</body>
+
+</html>

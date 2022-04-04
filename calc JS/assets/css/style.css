@@ -1,0 +1,179 @@
+/* GENERALI */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+}
+
+h1 {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+input {
+    width: 97%;
+    height: 1.8em;
+    font-size: 1.9em;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+}
+
+button {
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:active {
+    color: grey;
+    border: 3px solid white;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+
+/* CLASSI */
+
+.cont {
+    padding: 3em 0;
+    margin: 3em 0;
+    background-image: url('../images/background-1.webp');
+    background-repeat: repeat-x;
+}
+
+.calc {
+    border: 1px solid white;
+    box-shadow: 3px 3px 8px white;
+    border-radius: 10px;
+    padding: 1em;
+    width: 18em;
+    height: 26em;
+    background-color: black;
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.accendi {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+}
+
+.task {
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px white;
+    width: 15em;
+    height: 12.95em;
+    padding: 0.5em;
+    background-image: url('../images/lavagna.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+.btn-d {
+    width: 8.3em;
+}
+
+
+/* ID */
+
+#ult-ope,
+#ope-cor {
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    margin-top: 1em;
+    overflow-wrap: break-word;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+/* MEDIA@ */
+
+@media screen and (max-width: 615px) {
+    .result {
+        display: grid;
+    }
+    .task {
+        margin: 0.2em auto;
+        height: 7em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2,
+    #ult-ope,
+    #ope-cor {
+        font-size: 1.2em;
+    }
+    .cont {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .result {
+        display: grid;
+    }
+    .task {
+        margin: 0.2em auto;
+        height: 6em;
+        width: 11em;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h2,
+    #ult-ope,
+    #ope-cor {
+        font-size: 1.1em;
+    }
+    .calc {
+        width: 11.7em;
+        height: 20em;
+        margin: 0 auto;
+    }
+    button {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .cont {
+        margin-top: 0;
+    }
+    .btn-d {
+        width: 5.3em;
+    }
+    input {
+        font-size: 1.25em;
+    }
+}
