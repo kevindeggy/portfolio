@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRO GAME</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>ASTRO GAME</h1>
+    <div class="game">
+        <div class="schermata">
+            <div id="home">
+                <div id="welcome"><span>BENVENUTO</span> <br> NEL PRIMO GAME DI<br></div>
+                <div id="welcome2">Kevin De Girolamo</div>
+                <button id="inizia">INIZIA IL GIOCO</button>
+            </div>
+            <div id="perso">
+                <div id="welcome"><span>HAI PERSO!</span> <br> CHE PECCATOOO!<br></div>
+                <div id="welcome2">Riprova!</div>
+                <button><a href="javascript:location.reload(true)">RESTART GAME</a></button>
+            </div>
+            <div id="vinto">
+                <div id="welcome"><span>HAI VINTO!</span> <br> ALIENI UCCISI!<br></div>
+                <div id="welcome2">Vuoi Riprovare?</div>
+                <button><a href="javascript:location.reload(true)">RESTART GAME</a></button>
+            </div>
+            <div class="gioco2"></div>
+            <div class="gioco">
+                <div id="can1" class="cannone"></div>
+                <div id="colpo1"></div>
+                <div id="can2" class="cannone"></div>
+                <div id="colpo2"></div>
+                <div id="can3" class="cannone"></div>
+                <div id="colpo3"></div>
+                <div id="can4" class="cannone"></div>
+                <div id="colpo4"></div>
+                <div id="can5" class="cannone"></div>
+                <div id="colpo5"></div>
+
+                <div id="colpoship"></div>
+                <div id="ship"></div>
+            </div>
+            <div class="bottoni">
+                <button id="start">START GAME</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
