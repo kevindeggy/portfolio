@@ -1,0 +1,347 @@
+/* ELEMENTI BASE */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-shadow: -4px 4px 4px grey;
+    margin: 1em 280px 0.2em;
+    width: 50%;
+}
+
+p {
+    margin-left: 350px;
+    margin-top: 0.2em;
+}
+
+button {
+    margin-top: 1em;
+    font-size: 2em;
+    padding: 0.4em;
+    background-color: darkgrey;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* CLASSI */
+
+.game {
+    width: 1000px;
+    height: 500px;
+    margin-left: 25px;
+    background-image: url('../img/desk.svg');
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -4px 4px 4px 4px grey;
+}
+
+.schermata {
+    height: 650px;
+}
+
+.underGame {
+    height: 140px;
+    width: 1060px;
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.punti,
+.mosse,
+.combo {
+    background-color: rgb(184, 184, 184);
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: -2px 2px 4px 4px grey;
+    width: 30%;
+    height: 70px;
+    font-size: 1.65em;
+    text-shadow: -4px 4px 4px grey;
+    text-align: center;
+}
+
+
+/* ID */
+
+
+/* ID FINAL */
+
+#final-score {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 500px;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10em;
+    display: none;
+    text-align: center;
+}
+
+#final-score div {
+    border: 2px dotted black;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+
+/* ID START */
+
+#start {
+    width: 140px;
+    height: 50px;
+    font-size: 35px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgba(148, 148, 148, 0.557);
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: -1px 1px 2px 2px grey;
+    position: absolute;
+    left: 880px;
+    top: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#start:hover {
+    background-color: white;
+}
+
+
+/* CARTE */
+
+.card {
+    width: 74.66px;
+    height: 104.66px;
+    background-image: url('../img/card.svg');
+    border-radius: 7px;
+    border: 0.5px solid black;
+    position: absolute;
+    box-shadow: -1px 1px 1px 1px grey;
+    cursor: pointer;
+}
+
+#carta0 {
+    left: 1105px;
+    top: 15px;
+    transform: rotate(-8deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta1 {
+    left: 1100px;
+    top: 15px;
+    transform: rotate(-80deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta2 {
+    left: 1095px;
+    top: 15px;
+    transform: rotate(10deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta3 {
+    left: 1090px;
+    top: 15px;
+    transform: rotate(40deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta4 {
+    left: 1085px;
+    top: 15px;
+    transform: rotate(-10deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta5 {
+    left: 1080px;
+    top: 15px;
+    display: none;
+    opacity: 0;
+}
+
+#carta6 {
+    left: 1075px;
+    top: 15px;
+    transform: rotate(-55deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta7 {
+    left: 1070px;
+    top: 15px;
+    transform: rotate(25deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta8 {
+    left: 1065px;
+    top: 15px;
+    transform: rotate(-45deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta9 {
+    left: 1060px;
+    top: 15px;
+    transform: rotate(25deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta10 {
+    left: 1055px;
+    top: 15px;
+    transform: rotate(-25deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta11 {
+    left: 1050px;
+    top: 15px;
+    transform: rotate(95deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta12 {
+    left: 1045px;
+    top: 15px;
+    display: none;
+    opacity: 0;
+}
+
+#carta13 {
+    left: 1040px;
+    top: 15px;
+    transform: rotate(-15deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta14 {
+    left: 1035px;
+    top: 15px;
+    transform: rotate(-100deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta15 {
+    left: 1030px;
+    top: 15px;
+    transform: rotate(-10deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta16 {
+    left: 1025px;
+    top: 15px;
+    transform: rotate(10deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta17 {
+    left: 1020px;
+    top: 15px;
+    transform: rotate(-30deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta18 {
+    left: 1015px;
+    top: 15px;
+    transform: rotate(-50deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta19 {
+    left: 1010px;
+    top: 15px;
+    transform: rotate(90deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta20 {
+    left: 1005px;
+    top: 15px;
+    transform: rotate(80deg);
+    display: none;
+    opacity: 0;
+}
+
+#carta21 {
+    left: 1000px;
+    top: 15px;
+    transform: rotate(82deg);
+    display: none;
+    opacity: 0;
+}
+
+
+/* ANIMAZIONI */
+
+@keyframes rot1 {
+    from {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to {
+        z-index: 10;
+        transform: rotate3d(0, 1, 0, 360deg);
+        transform: scale(3);
+        left: 305px;
+        top: 300px;
+    }
+}
+
+.rot1 {
+    animation: rot1 1s;
+}
+
+@keyframes rot2 {
+    from {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to {
+        z-index: 10;
+        transform: rotate3d(0, 1, 0, 360deg);
+        transform: scale(3);
+        left: 655px;
+        top: 300px;
+    }
+}
+
+.rot2 {
+    animation: rot2 1s;
+}

@@ -35,7 +35,7 @@ function razzo1() {
     $("#colpo1").animate({ top: "590px" }, {
         complete: function() {
             if ($("#colpo1").css("left") === $("#ship").css("left") && $("#colpo1").css("top") === $("#ship").css("top")) {
-                $("#ship").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#ship").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#ship').css("opacity", 0); }
                 setInterval(a, 1000);
@@ -60,7 +60,7 @@ function razzo2() {
     $("#colpo2").animate({ top: "590px" }, {
         complete: function() {
             if ($("#colpo2").css("left") === $("#ship").css("left") && $("#colpo2").css("top") === $("#ship").css("top")) {
-                $("#ship").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#ship").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#ship').css("opacity", 0); }
                 setInterval(a, 1000);
@@ -85,7 +85,7 @@ function razzo3() {
     $("#colpo3").animate({ top: "590px" }, {
             complete: function() {
                 if ($("#colpo3").css("left") === $("#ship").css("left") && $("#colpo3").css("top") === $("#ship").css("top")) {
-                    $("#ship").css("backgroundImage", "url('../img/explosion.svg')");
+                    $("#ship").css("backgroundImage", "url('./img/explosion.svg')");
 
                     function a() { $('#ship').css("opacity", 0); }
                     setInterval(a, 1000);
@@ -111,7 +111,7 @@ function razzo4() {
     $("#colpo4").animate({ top: "590px" }, {
         complete: function() {
             if ($("#colpo4").css("left") === $("#ship").css("left") && $("#colpo4").css("top") === $("#ship").css("top")) {
-                $("#ship").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#ship").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#ship').css("opacity", 0); }
                 setInterval(a, 1000);
@@ -136,7 +136,7 @@ function razzo5() {
     $("#colpo5").animate({ top: "590px" }, {
         complete: function() {
             if ($("#colpo5").css("left") === $("#ship").css("left") && $("#colpo5").css("top") === $("#ship").css("top")) {
-                $("#ship").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#ship").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#ship').css("opacity", 0); }
                 setInterval(a, 1000);
@@ -200,7 +200,7 @@ function controllo() {
         complete: function() {
             if ($("#colpoship").css("left") === $("#can1").css("left") && $("#colpoship").css("top") === $("#can1").css("top")) {
                 clearInterval(inter1);
-                $("#can1").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#can1").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#can1').css("opacity", 0); }
                 setInterval(a, 1000);
@@ -213,7 +213,7 @@ function controllo() {
             }
             if ($("#colpoship").css("left") === $("#can2").css("left") && $("#colpoship").css("top") === $("#can2").css("top")) {
                 clearInterval(inter2);
-                $("#can2").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#can2").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#can2').css("opacity", 0); }
                 setInterval(a, 1000);
@@ -226,7 +226,7 @@ function controllo() {
             }
             if ($("#colpoship").css("left") === $("#can3").css("left") && $("#colpoship").css("top") === $("#can3").css("top")) {
                 clearInterval(inter3);
-                $("#can3").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#can3").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#can3').css("opacity", 0); }
                 setInterval(a, 1000);
@@ -239,7 +239,7 @@ function controllo() {
             }
             if ($("#colpoship").css("left") === $("#can4").css("left") && $("#colpoship").css("top") === $("#can4").css("top")) {
                 clearInterval(inter4);
-                $("#can4").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#can4").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#can4').css("opacity", 0); }
                 setInterval(a, 1000);
@@ -252,7 +252,7 @@ function controllo() {
             }
             if ($("#colpoship").css("left") === $("#can5").css("left") && $("#colpoship").css("top") === $("#can5").css("top")) {
                 clearInterval(inter5);
-                $("#can5").css("backgroundImage", "url('../img/explosion.svg')");
+                $("#can5").css("backgroundImage", "url('./img/explosion.svg')");
 
                 function a() { $('#can5').css("opacity", 0); }
                 setInterval(a, 1000);

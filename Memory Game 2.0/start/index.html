@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="memory game 2.0 by Kevin De Girolamo">
+    <title>Memory Game 2.0</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>M E M O R Y - G A M E - 2.0</h1>
+    <p>Pulisci la scrivania indovinando le coppie!</p>
+
+    <div class="schermata">
+        <div id="start">INIZIA</div>
+        <div class="game" id="gioco">
+
+            <div id="carta0" class="card" onclick="scopri(0)"></div>
+            <div id="carta1" class="card" onclick="scopri(1)"></div>
+            <div id="carta2" class="card" onclick="scopri(2)"></div>
+            <div id="carta3" class="card" onclick="scopri(3)"></div>
+            <div id="carta4" class="card" onclick="scopri(4)"></div>
+            <div id="carta5" class="card" onclick="scopri(5)"></div>
+            <div id="carta6" class="card" onclick="scopri(6)"></div>
+            <div id="carta7" class="card" onclick="scopri(7)"></div>
+            <div id="carta8" class="card" onclick="scopri(8)"></div>
+            <div id="carta9" class="card" onclick="scopri(9)"></div>
+            <div id="carta10" class="card" onclick="scopri(10)"></div>
+            <div id="carta11" class="card" onclick="scopri(11)"></div>
+            <div id="carta12" class="card" onclick="scopri(12)"></div>
+            <div id="carta13" class="card" onclick="scopri(13)"></div>
+            <div id="carta14" class="card" onclick="scopri(14)"></div>
+            <div id="carta15" class="card" onclick="scopri(15)"></div>
+            <div id="carta16" class="card" onclick="scopri(16)"></div>
+            <div id="carta17" class="card" onclick="scopri(17)"></div>
+            <div id="carta18" class="card" onclick="scopri(18)"></div>
+            <div id="carta19" class="card" onclick="scopri(19)"></div>
+            <div id="carta20" class="card" onclick="scopri(20)"></div>
+            <div id="carta21" class="card" onclick="scopri(21)"></div>
+
+            <div id="final-score">
+                <div id="fine"></div>
+                <button id="btn-reset"><a href="javascript:location.reload(true)">RICOMINCIA</a></button>
+            </div>
+        </div>
+        <div class="underGame">
+            <div class="punti"></div>
+            <div class="mosse"></div>
+            <div class="combo"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
