@@ -34,6 +34,22 @@ $("#start").click(function() {
 
 });
 
+// STAMPA DEL RECORD
+
+if (firstMatch !== 0) { //se è la prima partita
+    rec = localStorage.getItem('record');
+    if (rec === null) {
+        $("#record").text("RECORD: 0");
+    } else {
+        $("#record").text("RECORD: " + rec);
+    }
+}
+
+$("#azzeraRecord").click(function() {
+    localStorage.clear();
+    $("#record").text("RECORD: 0");
+});
+
 // METODO MESCOLA
 
 array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]; // 21 perchè le foto sono da 0 a 21
@@ -69,10 +85,15 @@ var call1 = 0;
 var call2 = 0;
 var vittoriaFinale = 0; //controlla la fine del gioco
 
+var LocalScore; // variabili dei records
+var firstMatch = 0;
+var showScore;
+var rec;
+
 // FUNZIONE SCOPRI CARTA
 
 function scopri(i) {
-    if (anim === 0) { //cosichè aspetta che l'animazione precedente sia conclusa
+    if (anim === 0) { //cosicchè aspetta che l'animazione precedente sia conclusa
 
         if (call2 === 1) { //se è la seconda carta da girare (variabile call)
 
@@ -116,7 +137,18 @@ function scopri(i) {
                 setTimeout(function() {
                     if (vittoriaFinale === 11) {
                         $("#final-score").css("display", "block");
-                        $("#fine").text("Il tuo punteggio totale calcolando anche le mosse effettuate è di: " + Math.ceil((punti / contatore) * 100));
+                        let score = Math.ceil((punti / contatore) * 100);
+                        $("#fine").text("Il tuo punteggio totale calcolando anche le mosse effettuate è di: " + score);
+                        if (firstMatch !== 0) {
+                            showScore = localStorage.getItem('record');
+                            rec = showScore;
+                        }
+                        firstMatch++; //per avvisare che non è più la prima partita
+
+                        if (score >= rec) { //aggiorna record
+                            LocalScore = score;
+                            localStorage.setItem('record', LocalScore);
+                        }
                     }
                 }, 2000);
             } else {

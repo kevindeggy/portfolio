@@ -12,8 +12,35 @@ h1 {
 }
 
 p {
-    margin-left: 350px;
+    margin-left: 300px;
     margin-top: 0.2em;
+}
+
+#azzeraRecord {
+    border-radius: 10px;
+    left: 745px;
+    top: 55px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+span {
+    font-weight: 900;
+    color: black;
+}
+
+#record {
+    background-color: darkgrey;
+    padding: 0.45em;
+    border-radius: 10px;
+}
+
+#altoSin {
+    position: absolute;
+    display: grid;
+    gap: 5px;
+    left: 30px;
+    top: 25px;
 }
 
 button {
@@ -21,6 +48,7 @@ button {
     font-size: 2em;
     padding: 0.4em;
     background-color: darkgrey;
+    margin-top: 0;
 }
 
 a {
