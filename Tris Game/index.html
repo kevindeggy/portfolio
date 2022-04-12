@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIS GAME</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="modale" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="titoloModal" class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Continua..</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="text-center my-3">TRIS GAME</h1>
+
+        <div class="row text-center text-white w-75 mx-auto">
+            <div class="col-2 text-center text-dark">
+                <h2>PLAYER 1</h2>
+                <p id="pP1" class="h3 text-success">E' il tuo TURNO!</p>
+                <p id="matchP1" class="h4">
+                    <i class="pallino1 bi bi-dash-circle"></i> <i class="pallino1 bi bi-dash-circle"></i> <i class="pallino1 bi bi-dash-circle"></i> <i class="pallino1 bi bi-dash-circle"></i> <i class="pallino1 bi bi-dash-circle"></i>
+                </p>
+            </div>
+            <div class="col-8">
+                <div class="container w-75 bg-dark">
+                    <div class="row text-center text-dark">
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center text-dark">
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center text-dark">
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="casella">
+                                ?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 text-center text-dark">
+                <h2>PLAYER 2</h2>
+                <p id="pP2" class="h3 text-danger">Attendi il tuo TURNO!</p>
+                <p id="matchP2" class="h4">
+                    <i class="pallino bi bi-dash-circle"></i> <i class="pallino bi bi-dash-circle"></i> <i class="pallino bi bi-dash-circle"></i> <i class="pallino bi bi-dash-circle"></i> <i class="pallino bi bi-dash-circle"></i>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
