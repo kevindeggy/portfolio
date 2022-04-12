@@ -1,1 +1,1 @@
-Tris-Game sviluppato da Kevin De Girolamo (kevindeggy) e Mauro Migliorino (Stemel93)
+Tris-Game sviluppato da Kevin De Girolamo (kevindeggy) e Mauro Migliorino (Stemel93).
