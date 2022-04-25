@@ -1,0 +1,233 @@
+html {
+    background-color: rgb(2, 106, 2);
+}
+
+.container-fluid {
+    text-align: center;
+    background-color: rgb(2, 106, 2);
+}
+
+.schede img {
+    width: 200px;
+    height: 200px;
+}
+
+#telefono {
+    background-image: url('../img/telefono.svg');
+    width: 460px;
+    height: 800px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 13.5em 8em;
+}
+
+.pulsanti {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+#titoloric {
+    display: none;
+}
+
+#inoltraChiam {
+    margin-top: 3.6em;
+    opacity: 0;
+}
+
+#azzeraChiam {
+    position: relative;
+    top: 208px;
+    left: -20px;
+    width: 55px;
+    height: 40px;
+    opacity: 0;
+}
+
+#infoChiamate {
+    position: relative;
+    top: -5px;
+    left: 40px;
+    width: 100px;
+    opacity: 0;
+}
+
+.schede input,
+button {
+    transform: scale(0.9);
+}
+
+#telefono input,
+button {
+    transform: scale(0.85);
+}
+
+#canc {
+    position: relative;
+    top: 110px;
+    left: -122px;
+    opacity: 0;
+}
+
+#dieci,
+#venti,
+#cinquanta,
+#cento,
+#logout,
+#secondiChiam,
+#numeroChiam,
+#inoltraChiam,
+#infoChiamate,
+#azzeraChiam {
+    display: none;
+}
+
+#uno,
+#due,
+#tre,
+#quattro,
+#cinque,
+#sei,
+#sette,
+#otto,
+#nove,
+#zero {
+    display: none;
+    position: relative;
+    opacity: 0;
+}
+
+#unoPre,
+#duePre,
+#trePre,
+#quattroPre,
+#cinquePre,
+#seiPre,
+#settePre,
+#ottoPre,
+#novePre,
+#zeroPre {
+    position: relative;
+    opacity: 0;
+}
+
+#uno {
+    top: 50px;
+    left: -180px;
+}
+
+#unoPre {
+    top: 265px;
+    left: -90px;
+}
+
+#due {
+    top: 10px;
+    left: 75px;
+}
+
+#duePre {
+    top: 275px;
+    left: -37px;
+}
+
+#tre {
+    top: 0px;
+    left: 140px;
+}
+
+#trePre {
+    top: 265px;
+    left: 20px;
+}
+
+#quattro {
+    top: 50px;
+    left: -95px;
+}
+
+#quattroPre {
+    top: 280px;
+    left: -17px;
+}
+
+#cinque {
+    top: 65px;
+    left: -42px;
+}
+
+#cinquePre {
+    top: 290px;
+    left: 38px;
+}
+
+#sei {
+    top: 52px;
+    left: 10px;
+}
+
+#seiPre {
+    top: 280px;
+    left: 92px;
+}
+
+#sette {
+    top: 65px;
+    left: -30px;
+}
+
+#settePre {
+    top: 330px;
+    left: -132px;
+}
+
+#otto {
+    top: 82px;
+    left: 18px;
+}
+
+#ottoPre {
+    top: 345px;
+    left: -82px;
+}
+
+#nove {
+    top: 65px;
+    left: 70px;
+}
+
+#novePre {
+    top: 293px;
+    left: 138px;
+}
+
+#zero {
+    top: 135px;
+    left: -62px;
+}
+
+#zeroPre {
+    top: 360px;
+    left: 8px;
+}
+
+h2 img {
+    width: 100px;
+    height: 30px;
+}
+
+.spiega {
+    position: absolute;
+    padding: 0 3.8em;
+    font-size: 0.8em;
+    width: 40%;
+    top: 350px;
+    left: -20px;
+    color: white;
+}
+
+.spiega p {
+    margin-top: 100px;
+}
