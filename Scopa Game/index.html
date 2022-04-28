@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopa Game</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>SCOPA GAME</h1>
+
+    <div class="tavolino">
+        <div class="parte-su">
+            <div id="scelta">
+                <h5>Fai la tua scelta:</h5>
+            </div>
+            <div id="cartePc"></div>
+            <div id="oscurare-carte"></div>
+        </div>
+        <div class="parte-giu">
+            <div id="gioco"></div>
+            <div id="mazzo"></div>
+        </div>
+    </div>
+
+    <div id="cartePlayer"></div>
+
+    <div id="finePartita">
+        <div id="risP1">
+            <h3>Player1</h3>
+        </div>
+        <div id="risPc">
+            <h3>PC</h3>
+        </div>
+        <button id="continua"><a href="javascript:location.reload(true)">Continua</a></button>
+    </div>
+    <div id="fine">
+        <div id="risP1fine"></div>
+        <div id="risPcfine"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

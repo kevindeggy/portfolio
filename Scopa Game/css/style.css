@@ -1,0 +1,148 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: green;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.tavolino {
+    background-image: url('../img/table.svg');
+    background-size: cover;
+    width: 75%;
+    height: 480px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 3px black;
+    display: grid;
+}
+
+#scelta {
+    position: absolute;
+    top: 80px;
+    width: 35%;
+    height: 80%;
+    font-size: 1.1em;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.866);
+    text-transform: uppercase;
+    display: none;
+}
+
+#scelta p {
+    font-size: 0.5em;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.2em 0 0.2em;
+    display: flex;
+    transform: scale(0.75);
+}
+
+#scelta p:hover {
+    background-color: rgb(252, 78, 78);
+}
+
+#scelta p div {
+    margin: 0 auto;
+    display: flex;
+    gap: 1em
+}
+
+#oscurare-carte {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    background-color: red;
+    width: 230px;
+    height: 230px;
+    display: none;
+}
+
+#mazzo {
+    position: relative;
+    background-image: url('../img/mazzo.svg');
+    width: 80px;
+    height: 135px;
+    top: -170px;
+    left: 0px;
+}
+
+.parte-giu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.parte-su {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartePlayer {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    width: 60%;
+    height: 200px;
+    margin: 0.7em auto;
+}
+
+.passCarta:hover {
+    height: 202.5px;
+    width: 120px;
+}
+
+#gioco {
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+#cartePc {
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+#finePartita {
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: rgb(216, 255, 189);
+    border-radius: 30px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#risP1 {
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    width: 40%;
+    height: 55%;
+}
+
+#risPc {
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    width: 40%;
+    height: 55%;
+}
